@@ -7,36 +7,82 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Colégio Soberano</h1>
+  <header class="topo">
+    <h1>🎓 Colégio Soberano</h1>
     <nav>
-      <a href="#sobre">Sobre</a>
-      <a href="#contato">Matrículas</a>
+      <a href="#diferenciais">Diferenciais</a>
+      <a href="#niveis">Ensino</a>
+      <a href="#contato" class="destaque">Matrículas</a>
     </nav>
   </header>
 
   <section class="hero">
+    <span class="selo">Matrículas abertas</span>
     <h2>O melhor começo para o futuro do seu filho</h2>
     <p>Ensino com carinho, qualidade e atenção individual. Venha conhecer o Colégio Soberano.</p>
-    <a class="botao" href="#contato">Agende uma visita</a>
+    <div class="botoes">
+      <a class="botao" href="#contato">Agende uma visita</a>
+      <a class="botao secundario" href="https://wa.me/55DDDNUMERO" target="_blank">Falar no WhatsApp</a>
+    </div>
   </section>
 
-  <section id="sobre">
-    <h2>Sobre a escola</h2>
-    <p>Escreva aqui a história, os níveis de ensino e os diferenciais da escola.</p>
+  <section id="diferenciais" class="bloco">
+    <h2>Por que escolher o Colégio Soberano?</h2>
+    <div class="cards">
+      <div class="card">
+        <span class="icone">👩‍🏫</span>
+        <h3>Atenção individual</h3>
+        <p>Turmas acompanhadas de perto por professores dedicados.</p>
+      </div>
+      <div class="card">
+        <span class="icone">📚</span>
+        <h3>Ensino de qualidade</h3>
+        <p>Aprendizado sólido, com foco no desenvolvimento de cada aluno.</p>
+      </div>
+      <div class="card">
+        <span class="icone">❤️</span>
+        <h3>Ambiente acolhedor</h3>
+        <p>Um espaço seguro e carinhoso para seu filho crescer feliz.</p>
+      </div>
+    </div>
   </section>
 
-  <section id="contato">
-    <h2>🎓 Matrículas abertas! Garanta a vaga do seu filho</h2>
-    <p>Deixe seus dados e nossa equipe entra em contato em até 24 horas. Sem compromisso!</p>
-    <form action="https://formspree.io/f/xaeelvdv" method="POST">
-      <input type="text" name="nome" placeholder="Seu nome" required>
-      <input type="tel" name="telefone" placeholder="Telefone / WhatsApp" required>
-      <input type="email" name="email" placeholder="E-mail">
-      <textarea name="mensagem" placeholder="Em que podemos ajudar?"></textarea>
-      <button type="submit">Quero saber mais sobre as matrículas</button>
-    </form>
+  <section id="niveis" class="bloco claro">
+    <h2>Níveis de ensino</h2>
+    <div class="cards">
+      <div class="card">
+        <span class="icone">🧸</span>
+        <h3>Educação Infantil</h3>
+        <p>Descobertas, brincadeiras e os primeiros passos na escola.</p>
+      </div>
+      <div class="card">
+        <span class="icone">✏️</span>
+        <h3>Ensino Fundamental I</h3>
+        <p>Alfabetização e base sólida para os próximos anos.</p>
+      </div>
+      <div class="card">
+        <span class="icone">🔬</span>
+        <h3>Ensino Fundamental II</h3>
+        <p>Autonomia, pensamento crítico e preparação para o futuro.</p>
+      </div>
+    </div>
   </section>
+
+  <section id="contato" class="bloco">
+    <div class="caixa-form">
+      <h2>🎓 Matrículas abertas! Garanta a vaga do seu filho</h2>
+      <p>Deixe seus dados e nossa equipe entra em contato em até 24 horas. Sem compromisso!</p>
+      <form action="https://formspree.io/f/xaeelvdv" method="POST">
+        <input type="text" name="nome" placeholder="Seu nome" required>
+        <input type="tel" name="telefone" placeholder="Telefone / WhatsApp" required>
+        <input type="email" name="email" placeholder="E-mail">
+        <textarea name="mensagem" placeholder="Em que podemos ajudar?"></textarea>
+        <button type="submit">Quero saber mais sobre as matrículas</button>
+      </form>
+    </div>
+  </section>
+
+  <a class="whats" href="https://wa.me/55DDDNUMERO" target="_blank">💬 WhatsApp</a>
 
   <footer>
     <p>&copy; 2026 Colégio Soberano. Todos os direitos reservados.</p>
